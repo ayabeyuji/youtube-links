@@ -3,7 +3,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>家族のYouTube記録（強調枠線ver）</title>
+  <title>家族のYouTube記録（スマホでも強調表示）</title>
   <style>
     body {
       font-family: "Yu Gothic", sans-serif;
@@ -20,17 +20,17 @@
       padding-bottom: 0.5em;
     }
     .video {
-      margin-bottom: 2em;
-      border: 2px solid #888;
-      border-radius: 10px;
+      margin: 1.5em 0;
+      border: 3px solid #444;
+      border-radius: 12px;
       overflow: hidden;
       background-color: #fff;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
       transition: box-shadow 0.3s, transform 0.2s;
     }
     .video:hover {
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+      transform: translateY(-4px);
     }
     .video a {
       text-decoration: none;
@@ -45,23 +45,30 @@
       border-bottom: 1px solid #eee;
     }
     .video-title {
-      padding: 0.9em;
-      font-size: 1.1em;
+      padding: 1em;
+      font-size: 1.15em;
       font-weight: bold;
     }
     @media (max-width: 600px) {
       body {
         padding: 1em;
       }
+      .video {
+        border: 3px solid #444;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      }
+      .video:hover {
+        box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+      }
       .video-title {
-        font-size: 1em;
-        padding: 0.6em;
+        font-size: 1.1em;
+        padding: 0.9em;
       }
     }
   </style>
 </head>
 <body>
-  <h1>📼 家族のYouTube記録（サムネイル付き・浮き枠強調）</h1>
+  <h1>📼 家族のYouTube記録（スマホ対応・強調枠線）</h1>
   
     <div class="video">
       <a href="https://youtu.be/KY4dRR58J34" target="_blank">
